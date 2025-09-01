@@ -1,0 +1,209 @@
+/*
+ * Google Font Import
+ * Used to get the 'Roboto' font
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*
+ * General body styling
+ */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5dc; /* Aesthetic beige */
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Use column layout for header and main content */
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*
+ * Header styling
+ */
+.header {
+    width: 100%;
+    background-color: #e0d9b9; /* A darker, elegant beige */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #4b3832; /* Rich brown for contrast */
+}
+
+.header-desc {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #726b62; /* A softer gray-brown for readability */
+}
+
+/*
+ * Main container for form and table
+ */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #4b3832;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/*
+ * Form styling
+ */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"], textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc; /* Lighter border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #654321; /* Dark brown button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #4b3832; /* A darker brown on hover */
+}
+
+/*
+ * Table and Task-Specific Styling
+ */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fefefe;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.task-table th, .task-table td {
+    padding: 15px;
+    border: none; /* Removed border lines for a cleaner look */
+    text-align: left;
+}
+
+.task-table th {
+    background-color: #8b7967; /* A classy brown for the header */
+    color: white;
+}
+
+.task-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.task-table tr:hover {
+    background-color: #e5e5e5;
+}
+
+/* Styling for completed tasks */
+.completed-task td {
+    text-decoration: line-through;
+    color: #999;
+    font-style: italic;
+}
+
+.task-checkbox {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+/*
+ * Link and Button styling
+ */
+a {
+    text-decoration: none;
+    color: #4b3832;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    background-color: #8b7967;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #654321;
+}
+
+/* Inside styles.css */
+
+/* Styling for the new actions column */
+.actions {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.edit-icon, .delete-icon {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.edit-icon {
+    color: #007BFF;
+}
+
+.edit-icon:hover {
+    color: #0056b3;
+}
+
+.delete-icon {
+    color: #cc0000;
+}
+
+.delete-icon:hover {
+    color: #ff3333;
+}
